@@ -1,8 +1,8 @@
 # SSH
 
-**Copy SSH key to server for SSH connection via key authentification**
+##Copy SSH key to server for SSH connection via key authentification
 
-Option1: copy manualy
+###Option1: copy manualy
 
 Start on the Server you want to reach
 
@@ -12,13 +12,13 @@ Start on the Server you want to reach
 	sudo chmod 700 /home/$USER/.ssh
 	sudo chmod 600 /home/$USER/.ssh/authorized_key
 
-Option2: ssh-copy-id
+###Option2: ssh-copy-id
 
 Start from your local Machine
 
 	ssh-copy-id $USER@$SERVER
 
-**Disable login via password authentification**
+##Disable login via password authentification
 
 	sudo nano /etc/ssh/sshd_config
 
