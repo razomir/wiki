@@ -22,10 +22,10 @@ Disable login via password authentification
 
 	sudo nano /etc/ssh/sshd_config
 
-Ensure that following Variables are set:
+Ensure that following variables are set
 
-* PasswordAuthentication no
-* RSAAuthentication yes
-* PubkeyAuthentication yes
+> PasswordAuthentication no
+> RSAAuthentication yes
+> PubkeyAuthentication yes
 
 	sudo /etc/init.d/sshd reload
