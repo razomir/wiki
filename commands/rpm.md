@@ -8,4 +8,4 @@
 
 be careful because of >> = append
 
-	Export all Files deployed from any Package to a file
+	for i in $(rpm -qa);do rpm -ql "$i" >> rpm_output.txt; done
