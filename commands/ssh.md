@@ -24,8 +24,9 @@ Disable login via password authentification
 
 Ensure that following variables are set
 
-> PasswordAuthentication no
-> RSAAuthentication yes
-> PubkeyAuthentication yes
+	PasswordAuthentication no
+	RSAAuthentication yes
+	PubkeyAuthentication yes
+
 
 	sudo /etc/init.d/sshd reload
