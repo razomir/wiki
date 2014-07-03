@@ -2,7 +2,7 @@
 
 **Copy SSH key to server for SSH connection via key authentification**
 
-1. Manual:
+Option1: copy manualy
 
 Start on the Server you want to reach
 
@@ -12,7 +12,7 @@ Start on the Server you want to reach
 	sudo chmod 700 /home/$USER/.ssh
 	sudo chmod 600 /home/$USER/.ssh/authorized_key
 
-2. ssh-copy-id
+Option2: ssh-copy-id
 
 Start from your local Machine
 
