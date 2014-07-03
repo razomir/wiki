@@ -18,7 +18,7 @@ Start from your local Machine
 
 	ssh-copy-id $USER@$SERVER
 
-Disable login via password authentification
++ Disable login via password authentification
 
 	sudo nano /etc/ssh/sshd_config
 
@@ -28,5 +28,6 @@ Ensure that following variables are set
 	RSAAuthentication yes
 	PubkeyAuthentication yes
 
+Reload Service 
 
 	sudo /etc/init.d/sshd reload
