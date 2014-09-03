@@ -17,3 +17,17 @@ for crt format
 for pem format
 
 	for i in $(locate .pem); do openssl rsa -in $i -text -noout ; done
+
+#### Create new certificate request
+
+	openssl req -new -key private_key_file.key -out certificate_request_file.csr
+
+After starting the command, it will askt for the details
+
+#### View details of a certificate request
+
+	openssl req -noout -text -in certificate_request_file.csr
+
+#### Change pem file to key file
+
+	openssl pkey -in private_key.pem -out private_key.key
