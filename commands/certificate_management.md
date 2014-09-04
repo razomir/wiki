@@ -31,3 +31,23 @@ After starting the command, it will askt for the details
 #### Change pem file to key file
 
 	openssl pkey -in private_key.pem -out private_key.key
+
+### Certificate Managment in Puppet
+
+#### List all certificates on Master
+
+	puppet cert list --all
+
+#### Clean a Certificate or Certificate Request
+
+On Master
+
+	puppet cert clean $HOSTNAME
+
+On Client
+
+	rm -rf /var/lib/puppet/ssl/*
+
+Sign a certificate on Master
+
+	puppet cert sign $HOSTNAME
